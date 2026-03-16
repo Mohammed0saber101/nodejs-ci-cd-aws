@@ -150,6 +150,10 @@ app.delete("/api/watchlist/:sessionId/:symbol", async (req, res) => {
   }
 });
 
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok" });
+});
+
 // Start server
 async function start() {
   await connectDB();
