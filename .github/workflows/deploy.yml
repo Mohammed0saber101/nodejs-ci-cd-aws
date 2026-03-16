@@ -24,9 +24,6 @@ jobs:
       - name: Build the client
         run: npm --prefix client run build
 
-      - name: Build the application
-        run: npm run build
-
       - name: Setup SSH key
         run: |
           mkdir -p ~/.ssh
